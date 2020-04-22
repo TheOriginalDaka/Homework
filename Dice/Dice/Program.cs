@@ -11,13 +11,12 @@ namespace Dice
         static void Main(string[] args)
         {
             Dice dice = new Dice();
-            int result = 0;
 
             Console.Write("Enter size: ");
             int size = int.Parse(Console.ReadLine());
 
-            result = dice.RollDice(size);
-            Console.WriteLine("The number is: " + result);
+            Console.Clear();
+            dice.RollDice(size);
 
             Console.ReadLine();
         }
